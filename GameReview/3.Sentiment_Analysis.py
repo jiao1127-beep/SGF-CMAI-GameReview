@@ -7,8 +7,8 @@ import time
 
 # --- 1. 配置区域 ---
 client = OpenAI(
-    api_key="sk-R2QX0RbbhY6dNo5w6587785cA0E14aFeAb91D0A9CeEdEc26",
-    base_url="https://api.apiyi.com/v1"
+    api_key="",
+    base_url=""
 )
 
 INPUT_FILE = "./data/LDA_comments_t.xlsx"
