@@ -91,11 +91,11 @@ def load_whitelist(path):
         return set(line.strip() for line in f if line.strip())
 
 # 在 if __name__ == '__main__': 中加载
-math_whitelist = load_whitelist("./stop_dict/LDA_topicwords.csv")
+math_whitelist = load_whitelist("./data/LDA_topicwords.csv")
 print(f"成功加载主题白名单，共包含 {len(math_whitelist)} 个核心词")
 logger.info(f"成功加载主题白名单，共包含 {len(math_whitelist)} 个核心词")
 
-stopwords = load_stopwords(".\stop_dict\hit_stopwords.txt")
+stopwords = load_stopwords(".\data\hit_stopwords.txt")
 stopwords |= custom_stopwords
 logger.info("加载哈工大指定停用词")
 
@@ -198,7 +198,7 @@ if __name__ == '__main__':
     logger.info("加载双语种embedding模型")
 
     # 读取数据
-    #df = pd.read_excel("./data/LDA_comment_notomato.xlsx")
+  
     df = pd.read_csv("./data/game_comments_t.csv")
     # print(df.head())
     logger.info("读取数据完成")
