@@ -16,8 +16,8 @@ GREEN_FILL, GREEN_BORDER = "#45a07a", "#1e4635"
 EDGE_PINK, EDGE_GREEN, EDGE_GREY = "#d67a83", "#45a07a", "#b0b0b0"
 
 def run_smart_layout_visualization():
-    input_path = r"D:\LDA-gamereviews\data\game_tags_analysis.xlsx"
-    output_path = r"D:\LDA-gamereviews\data\tag_topology_smart.pdf"
+    input_path = r".data\game_tags_analysis.xlsx"
+    output_path = r".data\tag_topology_smart.pdf"
 
     if not os.path.exists(input_path):
         print(f"错误：找不到文件 {input_path}")
